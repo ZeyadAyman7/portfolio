@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #E6E8E6;
+    background-color: #080708;
+}
+
+header {
+    background-color: #FCAB10;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 20px 0 10px;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+
+.image-container {
+    width: 400px;
+    height: 350px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.header-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.header-image:hover {
+    transform: scale(1.1);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+main {
+    padding: 20px 0;
+}
+
+article {
+    background-color: #080708;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1.1em;
+    line-height: 1.3em;
+}
+
+article h2 {
+    margin-top: 0;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.author-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.author-name {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+footer {
+    background-color: #1e1e1f;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .image-container {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header p {
+        font-size: 0.9em;
+    }
+
+    .image-container {
+        width: 400px;
+        height: 350px;
+    }
+
+    .author-image {
+        width: 40px;
+        height: 40px;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header p {
+        font-size: 0.8em;
+    }
+
+    .image-container {
+        width: 300px;
+        height: 250px;
+    }
+
+    .author-image {
+        width: 30px;
+        height: 30px;
+    }
+
+    footer {
+        font-size: 0.7em;
+    }
+}
