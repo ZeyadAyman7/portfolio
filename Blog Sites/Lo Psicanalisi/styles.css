@@ -29,7 +29,7 @@ header p {
     margin: 0 auto;
     overflow: hidden;
     border-radius: 50%;
-    border: 5px solid white;
+    border: 5px solid #080708;
 }
 
 .header-image {
